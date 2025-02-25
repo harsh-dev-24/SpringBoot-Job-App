@@ -1,21 +1,25 @@
 package com.harsh.jobapp.service;
 
-
-import com.harsh.jobapp.controller.Job;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
 
+import com.harsh.jobapp.model.Job;
 
 public interface JobService {
 
-    List<Job> findAllJobs();
+	List<Job> findAllJobs();
 
-    void createJob(Job job);
+	Job findJobById(Integer id);
 
-    Job updateJob(Job job, Integer id);
+	boolean createJob(Job job);
 
-    void deleteJob(Integer id);
+	Job updateJob(Job job, Integer id);
 
+	Job deleteJob(Integer id);
+
+	boolean loadJobs();
+
+	List<Job> searchJob(String keyword);
+
+	List<Job> findJobsByStatus(String status);
 
 }
