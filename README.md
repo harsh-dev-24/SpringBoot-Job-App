@@ -47,8 +47,7 @@ mvn spring-boot:run
 ### 🔧 Run the Spring Boot App using Docker image
 #### 1️⃣ Run the docker image
 ```sh
-docker run -d -p 8080:8080 maaadx/jobappimage
-		
+docker run -d -p 8080:8080 maaadx/jobappimage	
 ```
 ---
 
